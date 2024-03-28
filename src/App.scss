@@ -1,0 +1,67 @@
+.Body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  .Preview-background {
+    display: grid;
+    place-content: center;
+    width: 65vw;
+    background-color: #282c34;
+
+    .Thumbnail-div {
+      display: flex;
+      height: 30vw;
+      .Thumbnail-image {
+        width: 20vw;
+        margin: auto;
+      }
+      .Thumbnail-text {
+        width: 100%;
+        margin-left: 30px;
+        padding: 5vw 0px;
+      }
+    }
+  }
+
+  .Input-background {
+    display: grid;
+    place-content: center;
+    width: 35vw;
+    padding: 10vw auto;
+    gap: 20px;
+    background-color: #f0f0f0;
+
+    .Select-image .dropzone {
+      padding: 20px;
+      border: 2px dashed #007bff;
+      border-radius: 5px;
+      background-color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .Select-text textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical; /* 사용자가 높이 조절 가능 */
+    }
+
+    .Download-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .Download-button:hover {
+      background-color: #0056b3;
+    }
+  }
+}
